@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stl.css">
+</head>
+
+<body>
+    <main>
+
+        <div id=cart>
+            <p>КОРЗИНА</p>
+        </div>
+
+        <div id="popup">
+            <p>Состав корзины</p>
+            <div id="wrapper"> </div>
+            <button id=further>Далее</button>
+        </div>
+        <div id=delivery>
+            <p>Адрес доставки</p>
+            <input id="delivery_address" type="text" />
+            <button id=send>отправить</button>
+        </div>
+        <div id="comments">
+            <p>Комментарий к заказу</p>
+            <input id="comment" type="text" />
+            <button id=send_com>отправить</button>
+        </div>
+    </main>
+
+    <h3>ПРОДУКТОВЫЙ МАГАЗИН</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Autem dignissimos praesentium vel mollitia qui exercitationem,
+        suscipit eligendi cumque eaque magnam dolorum. Earum, ratione nulla.
+        Laudantium quaerat repellat amet aliquam obcaecati.</p>
+
+    <div id="products">
+        <div class="item_box">
+            <h3 class="item_title">Мороженое</h3>
+            <div class="ph" data-idx="0">
+                <img data-ide="0" src="img/морож_1.jpg">
+                <img data-ide="1" src="img/морож_2.jpg">
+                <img data-ide="2" src="img/морож_3.jpg">
+            </div>
+
+            <p>Цена: <span class="item_price">5</span>руб.</p>
+            <button class="button-primary plus" data-id=мороженое onclick="eventHandler()">+</button>
+            <button class="button-primary minus" data-id=мороженое onclick="eventHandler()">-</button>
+        </div>
+        <div class="item_box">
+            <h3 class="item_title">Хлеб</h3>
+            <div class="ph" data-idx="1">
+                <img data-ide="0" src="img/хлеб_1.jpg">
+                <img data-ide="1" src="img/хлеб_2.jpg">
+                <img data-ide="2" src="img/хлеб_3.jpg">
+            </div>
+            <p>Цена: <span class="item_price">2</span>руб.</p>
+            <button class="button-primary plus" data-id=хлеб onclick="eventHandler()">+</button>
+            <button class="button-primary minus" data-id=хлеб onclick="eventHandler()">-</button>
+        </div>
+        <div class="item_box">
+            <h3 class="item_title">Колбаса</h3>
+            <div class="ph data-idx=" 2">
+                <img data-ide="0" src="img/колбаса_1.jpg">
+                <img data-ide="1" src="img/колбаса_2.jpg">
+                <img data-ide="2" src="img/колбаса_3.jpeg">
+            </div>
+            <p>Цена: <span class="item_price">10</span>руб.</p>
+            <button class="button-primary plus" data-id=колбаса onclick="eventHandler()">+</button>
+            <button class="button-primary minus" data-id=колбаса onclick="eventHandler()">-</button>
+        </div>
+        <div class="item_box">
+            <h3 class="item_title">Мясо</h3>
+            <div class="ph" data-idx="3">
+                <img data-ide="0" src="img/мясо_1.jpg">
+                <img data-ide="1" src="img/мясо_2.jpeg">
+                <img data-ide="2" src="img/мясо_3.jpg">
+            </div>
+
+            <p>Цена: <span class="item_price">8</span>руб.</p>
+            <button class="button-primary plus" data-id=мясо onclick="eventHandler()">+</button>
+            <button class="button-primary minus" data-id=мясо onclick="eventHandler()">-</button>
+        </div>
+        <div class="item_box">
+            <h3 class="item_title">Курица</h3>
+            <div class="ph" data-idx="4">
+                <img data-ide="0" src="img/курица_1.jpg">
+                <img data-ide="1" src="img/курица_2.jpg">
+                <img data-ide="2" src="img/курица_3.jpg">
+            </div>
+            <p>Цена: <span class="item_price">7</span>руб.</p>
+            <button class="button-primary plus" data-id=курица onclick="eventHandler()">+</button>
+            <button class="button-primary minus" data-id=курица onclick="eventHandler()">-</button>
+        </div>
+        <div class="item_box">
+            <h3 class="item_title">Рыба</h3>
+            <div class="ph" data-idx="5">
+                <img data-ide="0" src="img/рыба_1.jpg">
+                <img data-ide="1" src="img/рыба_2.jpg">
+                <img data-ide="2" src="img/рыба_3.jpg">
+            </div>
+
+            <p>Цена: <span class="item_price">12</span>руб.</p>
+            <button class="button-primary plus" data-id=рыба onclick="eventHandler()">+</button>
+            <button class="button-primary minus" data-id=рыба onclick="eventHandler()">-</button>
+        </div>
+
+        <div id="photo">
+            <button id="closed">х</button>
+            <div id="investment"></div>
+
+            <button id="btnleft">назад</button>
+            <button id="btnright">вперед</button>
+        </div>
+    </div>
+
+    <script src="12.js"></script>
+
+</body>
+
+</html>
